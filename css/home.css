@@ -2,20 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-image: url("../img/bg.jpg");
-    background-position: center center;  /* Centraliza a imagem */
-    background-size: cover;  /* Faz a imagem cobrir toda a área sem distorcer */
-    background-repeat: no-repeat;  /* Impede a repetição da imagem */
-    background-attachment: fixed;  /* A imagem ficará fixa durante o scroll */
-}
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* FONTES */
 
-/* From Uiverse.io by adamgiebl */ 
 .card {
-    width: 190px;
-    height: 254px;
+    width: 600px;
+    height: 500px;
     border-radius: 30px;
-    background: #e0e0e0;
-    box-shadow: 15px 15px 30px #bebebe,
-               -15px -15px 30px #ffffff;
+    box-shadow: 0px 0px 30px rgba(8, 216, 18, 0.37);
+    border: 2px solid rgba(45, 219, 89, 0.18);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px); 
+  }
+
+  .card h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #d3eac8;
+  }
+
+  .perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
   }

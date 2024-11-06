@@ -715,6 +715,10 @@ video {
   clear: none;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -816,6 +820,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-\[this-is\\\\\] {
@@ -1354,6 +1362,12 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 1;
 }
@@ -1664,6 +1678,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1793,6 +1811,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1811,6 +1834,10 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
@@ -1840,6 +1867,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-repeat {
@@ -1901,6 +1932,10 @@ video {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-1 {
@@ -1972,6 +2007,11 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -2426,27 +2466,36 @@ video {
   forced-color-adjust: none;
 }
 
-body {
-  background-image: url("../img/bg.jpg");
-  background-position: center center;
-  /* Centraliza a imagem */
-  background-size: cover;
-  /* Faz a imagem cobrir toda a área sem distorcer */
-  background-repeat: no-repeat;
-  /* Impede a repetição da imagem */
-  background-attachment: fixed;
-  /* A imagem ficará fixa durante o scroll */
-}
+/* FONTES */
 
-/* From Uiverse.io by adamgiebl */
+/* FONTES */
 
 .card {
-  width: 190px;
-  height: 254px;
+  width: 600px;
+  height: 500px;
   border-radius: 30px;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe,
-               -15px -15px 30px #ffffff;
+  box-shadow: 0px 0px 30px rgba(8, 216, 18, 0.37);
+  border: 2px solid rgba(45, 219, 89, 0.18);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #d3eac8;
+}
+
+.perfil {
+  width: 200px;
+  height: 200px;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
 }
 
 @media (min-width: 640px) {
