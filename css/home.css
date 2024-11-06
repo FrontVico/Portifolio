@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-position: center center;  /* Centraliza a imagem */
+    background-size: cover;  /* Faz a imagem cobrir toda a área sem distorcer */
+    background-repeat: no-repeat;  /* Impede a repetição da imagem */
+    background-attachment: fixed;  /* A imagem ficará fixa durante o scroll */
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+  }
