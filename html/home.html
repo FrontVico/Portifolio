@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta title="Portifólio - FrontVico">
+    <title>FrontVico</title>
 
     <!-- css -->
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/tailwind.css">
     <!-- css -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- JS-->
     <script src="../js/home.js"></script>
     <!-- JS-->
-
 </head>
-<body class="flex items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('../img/bg.jpg');">
+<body class="bg-cover bg-center" style="background: linear-gradient(rgba(0, 17, 36, 0.8), rgba(0, 17, 36, 0.8)), url('../img/bg.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+
+    <!-- NAVBAR -->
+    <nav class="bg-transparent text-xl p-6 font-semibold flex justify-center md:justify-between items-center" style="color: #eef7ff;">
+        <ul class="flex space-x-4">
+            <li><a href="#About">Sobre mim</a></li>
+            <li><a href="#Projetos">Projetos</a></li>
+            <li><a href="#Contact">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- NAVBAR -->
     
-    <header class="">
-        <div class="card flex flex-col items-center justify-center p-6">
-            <img class="rounded-full bg-black bg-cover perfil mb-4" src="" alt="sla">
-            <h1 class="text-3xl text-center">Vinícius Ramos Amorim</h1>
-            <div class="icons flex space-x-4">
-                <i class="fa-brands fa-html5" style="color: #f0660a;"></i>
+    <!-- HEADER -->
+    <header class="h-screen flex items-center justify-center flex-col">
+        <div class="flex flex-col items-center justify-center p-6 typewriter">
+            <!-- Nome com quebra no mobile -->
+            <h1 class="text-7xl text-center md:flex md:flex-row md:space-x-2 md:whitespace-nowrap break-words" style="color: #74C0FC;">
+                Vinícius <br class="md:hidden"> Ramos
+            </h1>
+            <p class="txtSobre font-bold" style="color: #eef7ff;">Desenvolvedor Front-End.</p>
+            <div class="icons flex space-x-4 mt-4">
+                <i class="fa-brands fa-html5 icon" style="color: #f0660a;"></i>
+                <i class="fa-brands fa-css3-alt icon" style="color: #44a4ee;"></i>
+                <i class="fa-brands fa-square-js icon" style="color: #FFD43B;"></i>
+                <i class="fa-brands fa-react icon" style="color: #74C0FC;"></i>
             </div>
-            <p class=""></p>
+            <!-- Seta indicando para descer -->
+            <i class="fa-solid fa-arrow-down scroll-arrow"><a href="#About"></a></i>
         </div>
-    </header> 
+    </header>
+    <!-- HEADER -->
+
+    <!-- ABOUT -->
+     <section id="About">
+
+     </section>
+    <!-- ABOUT -->
+
 
 </body>
 </html>
