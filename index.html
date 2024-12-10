@@ -76,22 +76,47 @@
     </section>
     <!-- ABOUT -->
 
-    <script>
-     // Remova este trecho do arquivo ou comente-o
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+  <!-- PROJETOS -->
+<section id="Projetos" class="min-h-screen flex flex-col items-center justify-center py-16">
+  <h1 class="text-4xl font-bold text-white mb-8">Projetos</h1>
+  <div class="relative w-full max-w-4xl overflow-hidden">
+      <div class="flex transition-transform duration-700 ease-in-out" id="carousel">
+          <!-- Card 1 -->
+          <div class="flex-shrink-0 w-full flex items-center justify-center">
+              <picture>
+                  <!-- Imagem para Mobile -->
+                  <source srcset="img/mobile/ProjetoSTD-mobile.jpeg" media="(max-width: 768px)">
+                  <!-- Imagem para Desktop -->
+                  <img src="img/ProjetoSTD.jpeg" alt="Projeto 1" class="w-full h-auto object-cover rounded-lg shadow-lg">
+              </picture>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex-shrink-0 w-full flex items-center justify-center">
+              <picture>
+                  <source srcset="img/mobile/ProjetoNutri-mobile.jpeg" media="(max-width: 768px)">
+                  <img src="img/ProjetoNutri.jpeg" alt="Projeto 2" class="w-full h-auto object-cover rounded-lg shadow-lg">
+              </picture>
+          </div>
+          <!-- Card 3 -->
+          <div class="flex-shrink-0 w-full flex items-center justify-center">
+              <picture>
+                  <source srcset="img/ClimaMobile.jpeg" media="(max-width: 768px)">
+                  <img src="img/ProjetoClima.jpeg" alt="Projeto 3" class="w-full h-auto object-cover rounded-lg shadow-lg">
+              </picture>
+          </div>
+      </div>
+      <!-- Botões de navegação -->
+      <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white p-2 rounded-full">
+          <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-900 bg-opacity-50 text-white p-2 rounded-full">
+          <i class="fas fa-chevron-right"></i>
+      </button>
+  </div>
+</section>
+<!-- PROJETOS -->
 
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
-  </script>
+
+
 </body>
 </html>
