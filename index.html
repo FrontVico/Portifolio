@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- JS-->
-    <script src="js/home.js"></script>
+    <script src="js/home.js" defer></script>
     <!-- JS-->
 </head>
-<body class="bg-cover bg-center" style="background: linear-gradient(rgba(0, 17, 36, 0.8), rgba(0, 17, 36, 0.8)), url('img/bg.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+<body class="bg-cover bg-center" style="background: linear-gradient(to bottom, rgba(0, 17, 36, 0.8), rgba(0, 17, 36, 1) 70%, #001124 100%), url('img/bg.jpeg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
 
     <!-- NAVBAR -->
     <nav class="bg-transparent text-xl p-6 font-semibold flex justify-center md:justify-between items-center" style="color: #eef7ff;">
@@ -32,7 +32,6 @@
     <!-- HEADER -->
     <header class="h-screen flex items-center justify-center flex-col">
         <div class="flex flex-col items-center justify-center p-6 typewriter">
-            <!-- Nome com quebra no mobile -->
             <h1 class="text-7xl text-center md:flex md:flex-row md:space-x-2 md:whitespace-nowrap break-words" style="color: #74C0FC;">
                 Vinícius <br class="md:hidden"> Ramos
             </h1>
@@ -43,18 +42,56 @@
                 <i class="fa-brands fa-square-js icon" style="color: #FFD43B;"></i>
                 <i class="fa-brands fa-react icon" style="color: #74C0FC;"></i>
             </div>
-            <!-- Seta indicando para descer -->
-            <i class="fa-solid fa-arrow-down scroll-arrow"><a href="#About"></a></i>
+            <div>
+                <button>
+                    <i class="fa-solid fa-arrow-down scroll-arrow"></i>
+                    <a href="#About"></a>
+                </button>
+            </div>
         </div>
     </header>
     <!-- HEADER -->
 
     <!-- ABOUT -->
-     <section id="About">
-
-     </section>
+    <section id="About" class="About min-h-screen flex flex-col items-center justify-center py-16 md:py-8">
+        <h1 class="text-4xl font-bold text-white mb-8 hidden-opacity" data-animate>
+            Sobre Mim
+        </h1>
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-evenly text-center md:text-left gap-x-8">
+            <div class="flex-shrink-0 hidden-opacity" data-animate>
+                <img 
+                    class="fotoperfil w-48 h-48 rounded-full mx-auto md:mx-0" 
+                    src="./img/fotoAbout.jpg" 
+                    alt="Foto de perfil"
+                >
+            </div>
+            <div id="txt-about" class="txt-about text-white max-w-lg mt-8 md:mt-0 mx-4 md:mx-0 hidden-opacity" data-animate>
+                <p class="text-lg leading-relaxed text-justify">
+                    Olá, meu nome é Vinícius Ramos Amorim! Sou um desenvolvedor front-end apaixonado por criar interfaces modernas, acessíveis e funcionais. Com experiência em HTML, CSS, JavaScript e bibliotecas como React e Tailwind, tenho como objetivo transformar ideias em projetos reais que impactam positivamente a vida das pessoas.
+                    <br><br>
+                    Sempre em busca de aprender novas tecnologias e desafios, acredito no poder da colaboração e na importância de criar soluções que combinem design e funcionalidade. Vamos criar algo incrível juntos!
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- ABOUT -->
 
+    <script>
+     // Remova este trecho do arquivo ou comente-o
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
 
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+  </script>
 </body>
 </html>

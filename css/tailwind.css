@@ -715,12 +715,30 @@ video {
   clear: none;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .box-border {
@@ -822,8 +840,20 @@ video {
   display: none;
 }
 
+.h-48 {
+  height: 12rem;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -838,8 +868,16 @@ video {
   width: weird-and-invalid;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 
 .shrink {
@@ -1356,6 +1394,11 @@ video {
   justify-items: stretch;
 }
 
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1678,6 +1721,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1948,6 +1995,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2004,9 +2056,19 @@ video {
   vertical-align: super;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -2088,6 +2150,10 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2474,6 +2540,14 @@ video {
 
 /* FONTES */
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 90vh;
+}
+
 header {
   margin-top: -60px;
 }
@@ -2510,6 +2584,16 @@ a:hover {
   margin: 0 auto;
   border-right: .15em solid #74C0FC;
   animation: typing 3s steps(30, end) forwards;
+}
+
+.About p {
+  font-family: "Gotu", sans-serif;
+  font-weight: bold;
+}
+
+.fotoperfil {
+  width: 100%;
+  height: 350px;
 }
 
 /* Animação de digitação */
@@ -2654,6 +2738,15 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2670,6 +2763,10 @@ a:hover {
     justify-content: space-between;
   }
 
+  .md\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
   .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2678,6 +2775,15 @@ a:hover {
 
   .md\:whitespace-nowrap {
     white-space: nowrap;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
