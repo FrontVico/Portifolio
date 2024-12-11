@@ -29,3 +29,4 @@ next.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % 3;
     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
+

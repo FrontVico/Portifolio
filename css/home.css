@@ -105,3 +105,43 @@ html {
     50% { transform: translateY(10px); }
     100% { transform: translateY(0); }
   }
+
+ /* home.css */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button:active {
+  transform: translateY(-50%) scale(0.95); /* Mantém no centro */
+}
+
+/* Ajustes do carrossel no mobile */
+@media (max-width: 768px) {
+  #carousel img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .carousel-button {
+      padding: 8px; /* Botões menores no mobile */
+  }
+}
+
+/* Estilo para o carrossel */
+#carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px; /* Cantos arredondados */
+}
